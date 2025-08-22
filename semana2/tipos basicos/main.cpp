@@ -4,7 +4,11 @@ using namespace std;
 
 int main()
 {
-    int val = 10;
-    cout << "El valor de la variable es:" << val << endl;
+    //se debe indicar el tipo de dato de la variable "int"
+
+    int val1 = 10;
+    int val2 = 20;
+    int result = val1 + val2;
+    cout << "El resultado es:" << result << endl;
     return 0;
 }

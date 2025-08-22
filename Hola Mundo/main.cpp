@@ -1,4 +1,6 @@
 #include <iostream>
+//cout=print
+//cada funcion termina en ;
 
 using namespace std;
 
