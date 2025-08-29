@@ -12,7 +12,7 @@ int main()
         sizeof()(indica cuanto espacio ocupa una vaiable)
     */
 
-    unsigned short val1 = ; //unsigned significa que no puede ser negativo o volverse negativo
+    unsigned short val1 = 10; //unsigned significa que no puede ser negativo o volverse negativo
     cout<<"el valor es"<< val1 << endl;
     val1 = val1 + 1;  // valor maximo por sus 2 bytes
     cout<<"el valor es"<< val1 << endl;
