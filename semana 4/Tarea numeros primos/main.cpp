@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    /**
+    *Implemente un programa que solicite un numero por teclado
+    * e imprima los numeros primos menores que dicho numero
+    */
+
+
+    int n{0};
+    int i{1};
+    int d{0};
+    cin >> n;
+    int a{n-1};
+
+
+    while ( a > 0){   // while que pasa por cada numero menor que n, y que imprime los numeros primos
+        while ( i <= n){   // while que verifica si son numeros primos
+            if (a%i==0){
+                d++;
+            }
+            i++;
+        }
+        if (d == 2){
+            cout << a << endl;
+            a = a -1;
+            d = 0;
+            i = 1;
+        }
+        else{
+            a = a-1;
+            d = 0;
+            i = 1;
+        }
+    }
+    cout << "Hello world!" << endl;
+
+    return 0;
+}
