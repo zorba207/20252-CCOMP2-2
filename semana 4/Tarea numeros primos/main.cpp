@@ -25,7 +25,7 @@ int main()
             i++;
         }
         if (d == 2){
-            cout << a << endl;
+            cout << a << endl;   //hay otra solucion (foto) jorge
             a = a -1;
             d = 0;
             i = 1;
@@ -36,7 +36,6 @@ int main()
             i = 1;
         }
     }
-    cout << "Hello world!" << endl;
 
     return 0;
 }
