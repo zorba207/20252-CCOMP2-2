@@ -13,15 +13,22 @@ int main()
             31311313 -> es palindromo
     */
     int num{0};
-    int i{0};
-    int left{0};
-    int right{0};
-    cout << "Escribe un numero: ";
+    cout << "Escribe un numero (3 a 9 digitos): ";
     cin >> num;
-    while (i < 6){
-            left
-
+    int temp = num;
+    int invertido = 0;
+    while(temp > 0){
+        invertido = (invertido * 10) + (temp % 10);
+        temp /= 10;
     }
+    if (num == invertido){
+        cout << "Es palindromo" << endl;
+    }
+    else{
+        cout << "No es palindromo" << endl;
+    }
+
+
     // ¡TAREA! usando while y for ( tambien los otros ejercicios)
     return 0;
 }
