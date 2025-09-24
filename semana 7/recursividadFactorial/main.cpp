@@ -57,14 +57,15 @@ long long contarDigitos(long n){
 * Dado un numero, dar a conocer si es capicua o no
 */
 
-bool capicua(long n,){
+bool capicua(long n){
     long d = contarDigitos(n);
-    if (d < 10){
+    long ini{n/static_cast<int>(pow(10, d-1))},fin{n%10};
+    if (d==1){
         return true;
     }
     else{
-         if(n%10 == n/pow(10,d-1)){
-                return true * capicua((n%d-1)/10);    //!!TAREA¡¡
+         if(ini == fin){
+                return true * capicua(n % static_cast<int>(pow(10, d-1))/10);    //!!TAREA¡¡
         }
         else{
             return false;
@@ -77,10 +78,12 @@ bool capicua(long n,){
 
 int main(){
 
+    int n {44};
     cout << factorial(5) << endl;
     cout << fibonacci(8) << endl;
     cout << contarDigitos(136) << endl;
-    if (capicua(1441)== true){
+    cout << n % static_cast<int>(pow(10, contarDigitos(n)-1))/10 << endl;
+    if (capicua(44)== true){
         cout << "es capicua" << endl;
     }
     else{
