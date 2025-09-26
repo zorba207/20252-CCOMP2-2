@@ -9,7 +9,7 @@ int main()
 {
     int arr[] = {10, 20, 30, 40, 50}; //no se puede imprimir directamente
     char cad1[] = {'c','i','e','n','c','i','a','\0'};  //siempre terminan en \0, si se pueden imprimir directamente
-    char cad2[] = "ciencia";  //equivalente a lo anterior
+    char cad2[] = "ciencia";  //equivalente a lo anterior, el \0 esta al final como la anterior cadena solo que no se ve
 
     cout << arr << endl;
     cout << cad1 << endl;
