@@ -36,20 +36,21 @@ void invertirArray(int *ini, int* fin){
 
 //recursiva
 void invertirArrayrecursiva(int *ini,int*fin){
-    /**if (*ini == *fin){
-        return 0;
+    if (*ini == *fin){
+        return ;
     }
-    else{                                  //INTENTO de solucion mia
+    else{                                  //INTENTO de solucion mia (ya solucionado :)
         intercambio(ini,fin);
-        return invertirArrayrecursiva(ini++,fin--);
-    }*/
+        return invertirArrayrecursiva(++ini,--fin);
+    }
+    /**
     if(ini>=fin){
         return;
     }
     else{                                    //solucion del profesor
         intercambio(ini,fin);
         return invertirArrayrecursiva(++ini,--fin);//cuidado con donde ponesw el ++ y el --
-    }
+    }*/
 }
 
 

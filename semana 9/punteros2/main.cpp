@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int* ptr1;  //siempre tiene que apuntar a una variable
+    int* ptr1=nullptr;  //siempre tiene que apuntar a una variable
     int x = 10;
     ptr1 = &x;
 

@@ -3,15 +3,14 @@
 using namespace std;
 
 int contarCarac(char *ptr, char a){
-    contador = 0;
-    for(;*ptr != '\0'; ptr++){
+    int contador = 0;
+    while ( *ptr != '\0' ){
         if (*ptr == a){
-            contador++;   //falta
+            contador++;
         }
-        else{
-            continue
-        }
+        ptr++;
     }
+    return contador;
 }
 int main()
 {

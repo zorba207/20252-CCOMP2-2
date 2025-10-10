@@ -24,7 +24,7 @@ int main()
     /**ptr = &arr[0];
     ptr = arr;  //lo mismo
     */
-    cout << *ptr << endl; //1     //A una direccionde memoria si le sumas 1 suma una unidad del tipo que es el puntero, ejm. +1 = 4 bytes.
+    cout << *ptr << endl; //1     //A una direccionde memoria si le sumas 1, suma una unidad del tipo que es el puntero, ejm. +1 = 4 bytes.
     ptr++;
     cout << *ptr << endl; //2
     ptr++;
@@ -88,6 +88,8 @@ int main()
         ptr5--;
     }
     cout<<endl;
+
+
 
 
     return 0;
