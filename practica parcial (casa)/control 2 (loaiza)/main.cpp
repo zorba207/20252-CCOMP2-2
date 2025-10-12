@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void printmatriz(char* a[][4]){
+void printmatriz(char**a){    //la matriz dinamica solo se declara como un puntero
     for (int i=0; i<4; i++){
         cout << "[ ";
         for (int j=0; j<4; j++){
@@ -89,18 +89,26 @@ int main()
                 matriz[i][j]=mayusculas[idx_M++];
             }
             else if (i>=2 && j>=2){
-                matriz[i][j]=minusculas[idx_m++];
+                matriz[i][j]=minusculas[idx_m++];    //rellena la esquina superior izquierda y la esquina inferior derecha
             }
-            else if(i<=1 && j>=2){
+            else{
+                continue;
+            }
+        }
+    }
+
+    for (int i=0; i<4; i++){
+        for (int j=0; j<4; j++){
+            if(i<=1 && j>=2){
                 if (idx_M >=6){
-                    matriz[i][j]=digitos[idx_d++];        //falta esta parte reviar solucion del profesor
+                    matriz[i][j]=digitos[idx_d++];
                 }
                 else{
-                    matriz[i][j]=mayusculas[idx_M++];
+                    matriz[i][j]=mayusculas[idx_M++];    //rellena las esquinas faltantes
                 }
 
             }
-            else{
+            else if (i>=2 && j<=1){
                 if (idx_m <2){
                     matriz[i][j]=minusculas[idx_m++];
                 }
@@ -116,13 +124,17 @@ int main()
         }
     }
 
+
+
     for (int i=0; i<4; i++){
         cout << "[ ";
         for (int j=0; j<4; j++){
-            cout << matriz[i][j]<< " ";
+            cout << matriz[i][j]<< " ";  //print matriz
         }
         cout << "]"<<endl;
     }
+    cout << "print matriz con funcion" << endl;
+    printmatriz(matriz);
 
     return 0;
 }
