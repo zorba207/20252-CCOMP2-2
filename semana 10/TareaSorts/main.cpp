@@ -42,7 +42,23 @@ void InsertionSort (int*a,int tam){
 }
 
 
-//void MergeSort (int*a,int tam){
+void MergeSort (int*a,int tam,int inicio, int fin){
+    int longi = (fin - inicio)+1;
+    if (longi == 1){
+        return;
+    }
+    else{
+        int left[longi/2];
+        for (int i=0; i<longi/2;i++){
+            left[i]=a[i];
+        }
+        int right[longi/2];
+        for (int i=(longi/2)+1,j=0; i<longi-1;i++){
+            right[i]=a[i];
+        }
+        MergeSort(left,)
+    }
+}
 
 
 int main()
