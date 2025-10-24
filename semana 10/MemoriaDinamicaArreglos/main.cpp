@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 int sumArray(int *ptr, int tam){
@@ -28,10 +29,10 @@ int sumArrayRecursivo(int *ptr,int tam){
     return *ptr + sumArrayRecursivo(++ptr, --tam);   //solucion del profer
 }
 
-void intercambio (int a, int b){
-    int temp = a;
-                a=b;
-                b= temp;
+void intercambio (int &a, int &b){   //Si no pones los & o punteros solo intercambia en la funcion,
+    int temp = a;                   //no en la lista o lo que esta fuera de la funcion
+    a=b;
+    b= temp;
 }
 
 /**
@@ -50,7 +51,7 @@ void Bubblesort(int *ptr,int tam){
     }*/
 
     for (int i=0; i< tam-1; i++){
-        for (int j =0; j<tam-1; j++){
+        for (int j =0; j<tam-1-i; j++){
             if (ptr[j] > ptr[j+1]){
                 intercambio(ptr[j],ptr[j+1]);
             }
@@ -73,8 +74,9 @@ int main()
 {
     int tam = 5;
     int *ptr = new int[tam];
+    srand(time(0));
     for (int i = 0; i < tam; i++){
-        ptr[i] = tam;
+        ptr[i] = rand()%5;
     }
     for (int i = 0; i < tam; i++){
         cout << ptr[i] << " ";
