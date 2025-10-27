@@ -4,7 +4,7 @@ using namespace std;
 
 class Punto {  //es como crear un nuevo tipo de dato
 
-    private:  //solo accesible dentro de la clase (funciones) (si no esta es por defecto)
+    private:  //solo accesible dentro de la clase (funciones) (si no esta, es por defecto)
         int x;    //propiedades
         int y;
 
@@ -23,7 +23,7 @@ class Punto {  //es como crear un nuevo tipo de dato
             return x;
         }
 
-        int getY() const {  //const indica si es de lectua o de modificaion, const -> no se modifica
+        int getY() const {  //const indica si es de lectua o de modificaion, const -> no puede modificar al objeto
             return y;
         }
 
