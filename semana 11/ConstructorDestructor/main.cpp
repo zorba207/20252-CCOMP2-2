@@ -8,9 +8,10 @@ using namespace std;
 *    Es el metodo que se invoca cuando se crea una instancia.
 *    Es el metodo que se invoca cuando se asigna memoria a una instancia.
 *
-* DESTRUCTOR (tiene el mismo nombre que la clase, pero
+* DESTRUCTOR (tiene el mismo nombre que la clase, pero le antecede ~)
 *    Es el metodo que se invoca cuando se libera la memoria de
-*       una instancia.
+*    una instancia.
+*    Solo puede haber uno por clase.
 */
 
 int main()
@@ -21,7 +22,7 @@ int main()
     Punto* p2 = new Punto;
     cout <<endl;
     p2 ->print();    //en puntero se usa una  flecha, enves de un (.)
-    (*p2).print();
+    (*p2).print();   //-> : un puntero a un objeto
     cout <<endl;
 
     Punto p3(4,5);
@@ -36,7 +37,7 @@ int main()
     cout<<endl;
 
 
-    delete p2;
-    delete p4;
+    delete p2;  //libera la memoria del puntero (dinamica)
+    delete p4;  //no elimina al mismo puntero, llama al destructor
     return 0;
 }

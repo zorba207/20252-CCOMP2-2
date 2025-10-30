@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int longitud(char cad[]){
+/**int longitud(char cad[]){
     int re                 //respuesta del profesor (foto)
-}
+}*/
 int main()
 {
     int arr[] = {10, 20, 30, 40, 50}; //no se puede imprimir directamente
@@ -14,7 +14,6 @@ int main()
     cout << arr << endl;
     cout << cad1 << endl;
     cout << cad2 << endl;
-
-    cout << longitud(cad1)<< endl;  //7
+    //cout << longitud(cad1)<< endl;  //7
     return 0;
 }
