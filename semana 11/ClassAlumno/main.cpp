@@ -2,6 +2,7 @@
 #include "Alumno.h"
 using namespace std;
 
+
 int main()
 {
     Alumno alumno01(18,"Juan");
