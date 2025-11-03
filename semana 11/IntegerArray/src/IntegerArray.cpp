@@ -39,4 +39,6 @@ void IntegerArray::print() const
 IntegerArray::~IntegerArray()
 {
     delete[] data;
+    data=nullptr;
+    cout << "Memoria Liberada" << endl;
 }

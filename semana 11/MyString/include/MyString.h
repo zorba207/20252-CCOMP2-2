@@ -9,6 +9,7 @@ class MyString
 
         void print() const;
         int getSize() const;
+        char getData(int idx) const;
         void intercambio();
 
 
