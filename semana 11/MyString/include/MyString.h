@@ -5,12 +5,15 @@
 class MyString
 {
     public:
-        MyString(char *data, int size);
+        MyString(char *data);
 
         void print() const;
         int getSize() const;
         char getData(int idx) const;
         void intercambio();
+        void toUpper();
+        void toLower();
+
 
 
         virtual ~MyString();
