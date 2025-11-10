@@ -18,6 +18,8 @@ int main()
 
     a1.print();
 
+
+
     cout << a1.getSize() << endl;
     return 0;
 }

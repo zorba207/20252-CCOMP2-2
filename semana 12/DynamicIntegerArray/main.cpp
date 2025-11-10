@@ -10,6 +10,13 @@ int main()
 
     dia1.print();
 
+    dia1.push_back(9);
+    dia1.print();
+    dia1.insert(8,4);
+    dia1.print();
+    dia1.remove(2);
+    dia1.print();
+    cout << endl;
     cout<<dia1.getSize()<<endl;
     return 0;
 }
