@@ -16,7 +16,7 @@ Point::Point( int _x, int _y)
 
 void Point::print() const
 {
-    cout << "("<< x << ", "<< y << ")"<<endl;
+    cout << "("<< x << ", "<< y << ")";
 }
 
 void Point::setPoint(int _x, int _y)
